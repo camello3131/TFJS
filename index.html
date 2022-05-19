@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>coder delivery</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="row card-header">
+    <nav class="container-fluid" data-topbar>
+        <ul class="nav">
+            <li class="nav-item">
+                <h1><a href="index.html" class="nav-link">Coder Delivery</a></h1>
+            </li>
+        </ul>
+    </nav>
+    <div class="mediosDePago container col-3">
+        <h5>Seleccione medio de pago</h5>
+        <div class="list">
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="carrito">
+            <h2>Su compra es..</h2>
+            <div class="row">
+                <div class="col-6">
+                    <button class="botonLimpiar btn btn-danger" id="limpiar">Limpiar Carrito</button>
+                </div>
+                <div class="col-6">
+                    <button class="botonComprar btn btn-danger">Comprar</button>
+                </div>
+            </div>
+            <div id="carritoItems">cargando carrito...</div>
+            Precio Total: <strong id="totalPrice">0 $</strong>
+        </div>
+    </div>
+
+
+    
+    <div class="col-9 listaP">
+        <h2>Nuestros Productos</h2>
+        <div class="products card-body">
+            <div class="product col-2 card jumbotron" data-name="Pizza Muzzarella" data-price="700" data-id="0">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+                <h3>Pizza Muzzarella <span class="precioH3">$700</span></h3>
+                <input type="number" class="contador form-control" value="1" />
+                <button class="btn">Agregar a carrito</button>
+            </div>
+            <div class="product col-2 card " data-name="Pizza Napolitana" data-price="850" data-id="1">
+                <img src="https://images.unsplash.com/photo-1576458088443-04a19bb13da6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+                <h3>Pizza Napolitana <span class="precioH3">$850</span></h3>
+                <input type="number" class="contador form-control" value="1" />
+                <button class="btn">Agregar a carrito</button>
+            </div>
+            <div class="product col-2 card" data-name="Pizza Fugazzetta" data-price="800" data-id="2">
+                <img src="https://images.unsplash.com/photo-1606674727310-6d55b6960d8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" />
+                <h3>Pizza Fugazzetta <span class="precioH3">$800</span></h3>
+                <input type="number" class="contador form-control" value="1" />
+                <button class="btn">Agregar a carrito</button>
+            </div>
+            <div class="product col-2 card" data-name="Pizza Calabresa" data-price="900" data-id="3">
+                <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80" alt="" />
+                <h3>Pizza Calabresa <span class="precioH3">$900</span></h3>
+                <input type="number" class="contador form-control" value="1" />
+                <button class="btn">Agregar a carrito</button>
+            </div>
+            <div class="product col-2 card" data-name="Pizza Especial" data-price="850" data-id="4">
+                <img src="https://images.unsplash.com/photo-1595378834205-4c72ec6f3c25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+                <h3>Pizza Especial <span class="precioH3">$850</span></h3>
+                <input type="number" class="contador form-control" value="1" />
+                <button class="btn">Agregar a carrito</button>
+            </div>
+            <div class="product col-2 card" data-name="Empanadas Carne" data-price="100" data-id="5">
+                <img src="https://images.unsplash.com/photo-1646314230198-e27c375e1a2a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+                <h3>Empanadas Carne <span class="precioH3">$100</span></h3>
+                <input type="number" class="contador form-control" value="1" />
+                <button class="btn">Agregar a carrito</button>
+            </div>
+            <div class="product col-2 card" data-name="Empanadas JYQ" data-price="100" data-id="6">
+                <img src="https://www.recetasparaguay.com/base/stock/Recipe/23-image/23-image_web.jpg" alt="" />
+                <h3>Empanadas de JYQ <span class="precioH3">$100</span></h3>
+                <input type="number" class="contador form-control" value="1" />
+                <button class="btn">Agregar a carrito</button>
+            </div>
+            <div class="product col-2 card" data-name="Empanadas de Pollo" data-price="100" data-id="7">
+                <img src="http://alicante.com.ar/uploads/recetas/263_receta.jpg" alt="" />
+                <h3>Empanadas de pollo <span class="precioH3">$100</span></h3>
+                <input type="number" class="contador form-control" value="1" />
+                <button class="btn">Agregar a carrito</button>
+            </div>
+            <div class="product col-2 card" data-name="Sandwich de Milanesa" data-price="700" data-id="8">
+                <img src="https://www.comedera.com/wp-content/uploads/2021/06/sandwich-de-milanesa.jpg" alt="" />
+                <h3>Sandwich de Mila <span class="precioH3">$700</span></h3>
+                <input type="number" class="contador form-control" value="1" />
+                <button class="btn">Agregar a carrito</button>
+            </div>
+            <div class="product col-2 card" data-name="Lomito" data-price="800" data-id="9">
+                <img src="https://www.circuitogastronomico.com/wp-content/uploads/2021/04/sur-nota.jpeg" alt="" />
+                <h3>Lomito <span class="precioH3">$800</span></h3>
+                <input type="number" class="contador form-control" value="1" />
+                <button class="btn">Agregar a carrito</button>
+            </div>
+            <div class="product col-2 card" data-name="Juanacho" data-price="650" data-id="10">
+                <img src="https://images.aws.nestle.recipes/original/e325ee3e44afc2a9857d0c93af885c6e_S%C3%A1ndwich_de_huevo_con_queso.jpg" alt="" />
+                <h3>Juanacho <span class="precioH3">$650</span></h3>
+                <input type="number" class="contador form-control" value="1" />
+                <button class="btn">Agregar a carrito</button>
+            </div>
+            <div class="product col-2 card" data-name="Tostado" data-price="600" data-id="11">
+                <img src="https://img-global.cpcdn.com/recipes/94acb71b5a52d2cd/400x400cq70/photo.jpg" alt="" />
+                <h3>Tostado <span class="precioH3">$600</span></h3>
+                <input type="number" class="contador form-control" value="1" />
+                <button class="btn">Agregar a carrito</button>
+            </div>
+            <div class="product col-2 card" data-name="Papas Fritas" data-price="400" data-id="12">
+                <img src="https://images.unsplash.com/photo-1541592391523-5ae8c2c88d10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+                <h3>Papas Fritas <span class="precioH3">$400</span></h3>
+                <input type="number" class="contador form-control" value="1" />
+                <button class="btn">Agregar a carrito</button>
+            </div>
+            <div class="product col-2 card" data-name="Ensalada Mixta" data-price="300" data-id="13">
+                <img src="https://4.bp.blogspot.com/-HMR6m-d3oPk/V2wL9yn-pCI/AAAAAAAAEOk/WV716jG4oqEE1-Hd5-m0fZYjwrtYcpdzgCLcB/s1600/Ensaladamixta2.jpg" alt="" />
+                <h3>Ensalada Mixta <span class="precioH3">$300</span></h3>
+                <input type="number" class="contador form-control" value="1" />
+                <button class="btn">Agregar a carrito</button>
+            </div>
+            <div class="product col-2 card" data-name="Milanesa al plato" data-price="500" data-id="14">
+                <img src="https://static.misionesonline.news/wp-content/uploads/2020/05/28163533/milaaa.jpg" alt="" />
+                <h3>Milanesa al plato <span class="precioH3">$900</span></h3>
+                <input type="number" class="contador form-control" value="1" />
+                <button class="btn">Agregar a carrito</button>
+            </div>
+            <div class="product col-2 card" data-name="Lomo al Plato" data-price="600" data-id="15">
+                <img src="http://ainchile.cl/wp-content/uploads/2016/04/12931082_1600760780245710_3107546354911205696_n.jpg" alt="" />
+                <h3>Lomo al plato <span class="precioH3">$600</span></h3>
+                <input type="number" class="contador form-control" value="1" />
+                <button class="btn">Agregar a carrito</button>
+            </div>
+            <div class="product col-2 card" data-name="Vino de la casa" data-price="600" data-id="16">
+                <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" />
+                <h3>Vino de la casa <span class="precioH3">$600</span></h3>
+                <input type="number" class="contador form-control" value="1" />
+                <button class="btn">Agregar a carrito</button>
+            </div>
+            <div class="product col-2 card" data-name="Coca-Cola x 2.25" data-price="400" data-id="17">
+                <img src="https://images.unsplash.com/photo-1618914059174-40767c46f838?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+                <h3>Coca-Cola x 2.25 <span class="precioH3">$400</span></h3>
+                <input type="number" class="contador form-control" value="1" />
+                <button class="btn">Agregar a carrito</button>
+            </div>
+            <div class="product col-2 card" data-name="7Up x 2.25" data-price="400" data-id="18">
+                <img src="http://d3ugyf2ht6aenh.cloudfront.net/stores/001/170/454/products/7up-2l1-b0630fd120ff73d4ad15931858357226-640-0.jpg" alt="" />
+                <h3>7Up x 2.25 <span class="precioH3">$400</span></h3>
+                <input type="number" class="contador form-control" value="1" />
+                <button class="btn">Agregar a carrito</button>
+            </div>
+            <div class="product col-2 card" data-name="Cerveza de la casa" data-price="500" data-id="19">
+                <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+                <h3>Cerveza de la Casa <span class="precioH3">$500</span></h3>
+                <input type="number" class="contador form-control" value="1" />
+                <button class="btn">Agregar a carrito</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="contenedorComentarios col-9">
+        <h4 class="tituloApi">Comentarios con api</h4>
+        <hr class="col-9">
+
+        <ul id="listado"></ul>
+    </div>
+
+<script type="text/template" id="cartT">
+<% _.each(items, function (item) { %> <div class = "panel card"> <h3> <%= item.name %> </h3>  <span class="label">
+<%= item.contador %> unidad<% if(item.contador > 1)
+{%>es
+<%}%> por <%= item.total %> $ <button class= "btn btn-danger col-2 botonBorrar">x</button></span > </div>
+<% }); %>
+</script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js'></script>
+
+<script  src="script.js"></script>
+
+</body>
+</html>

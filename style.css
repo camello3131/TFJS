@@ -1,0 +1,113 @@
+
+nav {
+	margin-bottom: 1em !important;
+}
+
+h2 {
+	color: #ff6d34;
+}
+
+h3 {
+	font-size: 12px;
+}
+
+.carrito {
+	box-shadow: 0 0 5px #DDD;
+	padding: 20px;
+	position: fixed;
+	z-index: 1100;
+}
+.row{
+	margin-bottom: 15px;
+}
+.botonComprar, .botonLimpiar {
+	background-color: #ff6d34;
+	font-size: 10px;
+}
+
+#limpiar:hover {
+	background-color: #ff6d34;
+	color: #fff;
+}
+
+.product img {
+	height: 150px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.precioH3 {
+	font-weight: bold;
+	left: 0;
+}
+
+.products {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.product {
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+.contador {
+	width: 100%;
+}
+
+.nav-link {
+	color: black;
+}
+
+.nav-link:hover {
+	color: black;
+}
+
+#carritoItems {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.panel h3 {
+	margin-bottom: -5px;
+	padding: 5px;
+	font-weight: bold;
+}
+
+.panel .label {
+	padding: 5px;
+}
+
+.imagenMedio {
+	height: 30px;
+	width: 30px;
+	object-fit: cover;
+	display: block;
+	margin: 0 auto;
+}
+
+.pagosCard {
+	height: 85px;
+	width: 85px;
+	display: inline-block;
+	padding: 10px;
+} 
+
+.mediosDePago label {
+	font-size: 10px;
+	text-align: center;
+}
+.mediosDePago{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0;
+}
+
+.mediosDePago label input {
+	margin-top: 5px;
+}
+.tituloApi {
+	padding: 20px;
+	margin-right: 12px;
+}
