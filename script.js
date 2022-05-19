@@ -252,9 +252,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-document.querySelector('.botonBorrar').addEventListener('click', function (e){
-    console.log("se eliminara")
-})
 
 
 
